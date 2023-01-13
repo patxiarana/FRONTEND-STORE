@@ -142,9 +142,6 @@ background-color: var(--primarioOscuro);
 padding: 1rem;
 }
 
-.producto__imagen {
-width: 100%;
-}
 
 .producto__nombre {
     font-size: 4rem;
@@ -208,7 +205,6 @@ background-image: url(../img/grafico1.jpg);
 
 .nosotros__imagen {
 grid-row: 1 / 2;
-width: 100%;
 }
 
 @media (min-width:768px) {
@@ -237,6 +233,15 @@ width: 100%;
 .bloque__titulo {
     margin: 0;
 }
-.bloque__imagen{
-    width: 100%;
+
+
+
+
+/***pagina del producto ***/
+@media (min-width:786px) {
+    .camisa {
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        column-gap: 2rem;
+    }
 }
